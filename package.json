@@ -1,0 +1,25 @@
+{
+  "name": "x-wetland",
+  "version": "0.0.1",
+  "description": "eXample wetland",
+  "main": "index.js",
+  "repository": "https://github.com/jnst/x-wetland",
+  "author": "jnst <jnst@outlook.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "watch": "tsc --watch",
+    "prestart": "rm -rf dist && tsc",
+    "start": "node dist/main.js",
+    "format": "prettier --write \"{src,test}/**/*.ts\""
+  },
+  "dependencies": {
+    "mysql2": "^1.6.1",
+    "typescript": "^3.1.3",
+    "wetland": "^4.1.2",
+    "wetland-cli": "^1.1.2"
+  },
+  "devDependencies": {
+    "prettier": "^1.14.3"
+  }
+}
